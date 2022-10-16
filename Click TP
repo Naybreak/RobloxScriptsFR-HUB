@@ -1,3 +1,14 @@
+--[[
+Â© 2021 WeAreDevs
+A distribution of https://wearedevs.net/scripts
+Created August 2, 2021
+
+Directions: 
+1. Inject this script into any game using a Lua injector like JJSploit. 
+2. Press left ctrl + click to where you want to teleport
+Re-execute the script to toggle click teleport
+]]
+
 --Makes sure this script is only executed once
 if _G.WRDClickTeleport == nil then
 	_G.WRDClickTeleport = true
