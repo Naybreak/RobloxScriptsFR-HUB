@@ -4,13 +4,9 @@ local Window = Library.CreateLib("RobloxScriptsFR Hub - [UPDATE] Daybreak", "Dar
         -- MAIN
         local Main = Window:NewTab("Main")
         local MainSection = Main:NewSection("Main")
+        
 
-
-        MainSection:NewButton("Back/Front Flip", "Makes you do gymnastics", function()
-            loadstring(game:HttpGet('https://pastebin.com/raw/7wDcPtLk'))()
-        end)
-
-        MainSection:NewToggle("Unlimited-Sprint", "go fast and jump high", function(state)
+        MainSection:NewToggle("Unlimited-Sprint", "No Use Stamina", function(state)
             if state then
                 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 21
                 game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
@@ -20,8 +16,14 @@ local Window = Library.CreateLib("RobloxScriptsFR Hub - [UPDATE] Daybreak", "Dar
             end
         end)
 
-        MainSection:NewButton("Infinite Yield", "FE Admin Commands", function()
-            loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+
+        MainSection:NewButton("Noclip", "pass through objects", function()
+            loadstring(game:HttpGet(('https://raw.githubusercontent.com/Naybreak/RobloxScriptsFR-HUB/main/Noclip'),true))()
+        end)
+
+
+        MainSection:NewButton("Esp", "Config ESP", function()
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua',true))()
         end)
 
 
@@ -55,5 +57,23 @@ local Window = Library.CreateLib("RobloxScriptsFR Hub - [UPDATE] Daybreak", "Dar
             loadstring(game:HttpGet("https://raw.githubusercontent.com/Nicuse/RobloxScripts/main/BypassedFly.lua"))() 
 
             Fly(true)
+        end)
+
+
+        -- CREDIT
+        local Main = Window:NewTab("Credit")
+        local MainSection = Main:NewSection("Credit")
+        
+        
+        MainSection:NewButton("Naybreak", "Creator of this HUB", function()
+        end)
+
+        MainSection:NewButton("Discord", "https://discord.gg/gyqypdxkBs", function()
+        end)
+
+        MainSection:NewButton("Website", "https://robloxscriptsfr.odoo.com/", function()
+        end)
+
+        MainSection:NewButton("Youtube", "Naybreak", function()
         end)
         
