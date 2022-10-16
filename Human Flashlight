@@ -1,0 +1,10 @@
+--[[
+A Creation of Naybreak
+Last updated October 16, 2022
+
+Simply inject this script into any game using a Lua injector like Synapse or KRNL. 
+]]
+
+character = game:GetService("Players").LocalPlayer.Character
+pointLight = Instance.new("PointLight")
+pointLight.Parent = character.HumanoidRootPart
