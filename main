@@ -10,10 +10,10 @@ local Window = Library.CreateLib("RobloxScriptsFR Hub - [UPDATE] Daybreak", "Dar
             loadstring(game:HttpGet('https://pastebin.com/raw/7wDcPtLk'))()
         end)
 
-        MainSection:NewToggle("Super-Human", "go fast and jump high", function(state)
+        MainSection:NewToggle("Unlimited-Sprint", "go fast and jump high", function(state)
             if state then
-                game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 120
-                game.Players.LocalPlayer.Character.Humanoid.JumpPower = 120
+                game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 21
+                game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
             else
                 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
                 game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
