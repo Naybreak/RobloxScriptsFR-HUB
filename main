@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("RobloxScriptsFR Hub - [UPDATE] Daybreak", "DarkTheme")
+local Window = Library.CreateLib("RobloxScriptsFR Hub - [UPDATE] Daybreak", "BloodTheme")
 
         -- MAIN
         local Main = Window:NewTab("Main")
@@ -44,6 +44,10 @@ local Window = Library.CreateLib("RobloxScriptsFR Hub - [UPDATE] Daybreak", "Dar
             game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
         end)
 
+        PlayerSection:NewButton("Human Flashlight", "Turns your character into a private flashlight", function()
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/Naybreak/RobloxScriptsFR-HUB/main/Human%20Flashlight',true))()
+        end)
+
 
         --Other
         local Other = Window:NewTab("Other")
@@ -55,6 +59,20 @@ local Window = Library.CreateLib("RobloxScriptsFR Hub - [UPDATE] Daybreak", "Dar
 
         OtherSection:NewButton("Bypassed Fly", "bird mode", function()
             loadstring(game:HttpGet("https://raw.githubusercontent.com/Nicuse/RobloxScripts/main/BypassedFly.lua"))() 
+
+            Fly(true)
+        end)
+
+
+        OtherSection:NewButton("FpsBoost", "Add more FPS", function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Naybreak/RobloxScriptsFR-HUB/main/FpsBooster"))() 
+
+            Fly(true)
+        end)
+        
+        
+                OtherSection:NewButton("ClickTP", "Ctrl gauche + click", function()
+            loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Click%20Teleport.txt"))() 
 
             Fly(true)
         end)
